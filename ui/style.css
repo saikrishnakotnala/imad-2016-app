@@ -1,22 +1,335 @@
-body {
-    font-family: sans-serif;
-    background-color: lightgrey;
-    margin-top: 75px;
-}
 
-.center {
-    text-align: center;
-}
 
-.text-big {
-    font-size: 300%;
-}
+/* TYPOGRAPHY ======================================================================*/
 
-.bold {
-    font-weight: bold;
+h1{
+	font-family:'RalewayThin';
+	font-size:72px;
+	line-height:77px;
+	margin:10px 0 10px 0;
+	padding:0;
+	font-weight:normal;
 }
 
 .img-medium {
     height: 200px;
 }
+h2{
+	font-family:'RalewayThin';
+	font-size:48px;
+	line-height:53px;
+	margin:10px 0 10px 0;
+	padding:0;
+	font-weight:normal;
+}
 
+h3{
+	font-family:'TitilliumText22LLight';
+	font-size:24px;
+	line-height:35px;
+	margin:10px 0 10px 0;
+	padding:0;
+	font-weight:normal;
+}
+
+h4{
+	font-family:'TitilliumText22LLight';
+	font-size:18px;
+	line-height:23px;
+	margin:10px 0 10px 0;
+	padding:0;
+	font-weight:normal;
+}
+
+h5{
+	font-family:'TitilliumText22LLight';
+	font-size:16px;
+	line-height:20px;
+	margin:10px 0 10px 0;
+	padding:0;
+	font-weight:normal;
+	border-bottom:1px solid #d1d1d1;
+}
+
+h6{
+	font-family:'TitilliumText22LLight';
+	font-size:13px;
+	line-height:17px;
+	margin:10px 0 10px 0;
+	padding:0;
+	font-weight:normal;
+	
+
+}
+
+/* GENERAL LAYOUT ======================================================================*/
+#wrapper{
+	width:1024px;
+	height:392px;
+	position:absolute;
+	left:50%;
+	top:50%;
+	margin:-196px 0 0 -512px;
+	padding:0;
+	background:url(images/dropshadow.png) no-repeat center center;
+}
+
+#innerleft{
+	width:480px;
+	height:360px;
+	margin:0;
+	padding:0;
+	position:relative;
+	left:31px;
+	top:0;
+	font-size:14px;
+	color:#a1a0a0;
+	background:#0e0e0e url(images/left-bg.jpg) no-repeat center center;
+}
+
+#innerright{
+	width:480px;
+	height:360px;
+	overflow:scroll;
+	margin:0;
+	padding:0;
+	position:absolute;
+	left:511px;
+	top:0;
+	background:#f4f2f2 url(images/right-bg.jpg) no-repeat center center;
+}
+
+#innerright,#contactcard{
+	font-size:12px;
+	color:#666;
+	text-shadow:1px 1px #ffffff;
+}
+
+#innerright h1,#innerright h2,#innerright h4,#innerright h5,#innerright h6{
+	color:#555;
+}
+
+#borderleft, #borderright{
+	display:none;
+}
+
+/* LEFT PANE ======================================================================*/
+
+#header{
+	width:440px;
+	height:72px;
+	text-align:center;
+	margin:0;
+	padding:30px 20px 10px 20px;
+}
+
+#mainslide {
+  	width: 479px;
+  	height: 133px;
+  	overflow:hidden;
+}
+
+#mainimglight {
+  	width: 480px;
+  	height: 133px;
+  	position:absolute;
+ 	left:0;
+ 	top:112px;
+  	z-index: 200;
+}
+
+/* NAVIGATION ======================================================================*/
+
+#nav{
+	margin: 25px 0 0 30px;
+}
+
+.ie7 #nav{
+	padding:10px 0 0 30px;
+}
+
+#nav li{
+	float:left;	
+	list-style:none;
+}
+#nav li a{
+	margin-right:30px;
+	text-decoration:none;
+	color:#a1a0a0;
+}
+
+#nav li a:hover{
+	text-decoration:underline;
+	
+}
+
+#nav li a:active{
+	font-family:inherit;
+	font-size:inherit;
+	color:#fff;
+}
+
+
+
+/* RIGHT PANE GENERAL LAYOUT ======================================================================*/
+
+.page{
+	width:480px;
+	height:auto;
+	margin:0;
+	padding:0;
+	overflow:hidden;
+}
+
+.page a img{
+	text-decoration:none;
+	border: 0 none;
+}
+
+.page a:hover img, #card a:hover img{
+	opacity:0.9;
+ 	filter:alpha(opacity=90);
+}
+
+#home,#about,#resume,#portfolio,#contact{ 
+	position:static; 
+}
+
+.secondaryslide{
+	display:none;
+}
+
+/* PAGEHEADING AND PAGER LAYOUT ======================================================================*/
+
+.pageheader{
+	position:relative;
+	color:#ffffff;
+	left:63px;
+	width:64px;
+	height:77px;
+	margin:0 0 -47px 0;
+	padding:18px 0 0 0;
+	text-align:center;
+	text-shadow:1px 1px #454545;
+	z-index:11;
+	background-color:#444444;
+	border-bottom: 1px dashed #e7e4e4;
+	border-top:2px solid #555555
+}
+
+.verticalline{
+	display:none;
+}
+
+.pageheader h3 span{
+	display:block;
+	font-family:'RalewayThin';
+	font-size:48px;
+	line-height:35px;
+	margin:0;
+	padding:0 0 0 0;
+	font-weight:normal;
+	color:#FFF;
+	position:relative;
+	font-style:normal;
+}
+
+.pageheader h3{
+	font-family:"Times New Roman", Times, serif;
+	color:#FFF;
+	font-size:14px;
+	line-height:22px;
+	margin:10px 0 10px 0;
+	padding:0;
+	font-weight:normal;
+	font-style:oblique;
+}
+
+.bx-pager{
+	position:absolute;
+	left:190px;
+	bottom:-6px;
+	z-index:11;
+	padding:0;
+	margin:0;
+	width: 100px;
+	text-align:center;
+	font-family:"Times New Roman", Times, serif;
+	font-style:oblique;
+}
+	
+.bx-next{
+	width:14px;
+	height:14px;
+	position:absolute;
+	left:87px;
+	bottom:29px;
+	z-index:10;
+}
+
+.bx-prev{
+	width:14px;
+	height:14px;
+	position:absolute;
+	left:87px;
+	bottom:50px;
+	z-index:10;
+}
+
+/* CONTENT LAYOUT ======================================================================*/
+
+.content{
+	position:relative;
+	width:276px;
+	height:286px;
+	position:relative;
+	padding: 0 0 0 141px;
+	overflow:hidden;
+}
+
+.content p,.content h4,.content h5{ 
+	padding:0;
+	margin:0 0 10px 0;
+}
+
+/* HOME PAGE SPECIFIC ======================================================================*/
+
+.welcomeslide{
+	text-align:center;
+	width:480px;
+	padding: 110px 0 0 0;/* CENTER HEADINGS/TEXT VERTICAL ADJUST FOR IMAGES ETC */
+	height:360px;
+	font-size:14px;
+	color:#2c2c2c;
+}
+
+.welcomeslide img{
+	margin:15px 0 0 0;
+	padding:0;
+	width:401px;
+	height:240px;
+}
+/* RESUME PAGE SPECIFIC ======================================================================*/
+
+.skill dt{
+	margin:0;
+	padding:0;
+	font-size:13px;
+}
+
+.skill dt img{
+	vertical-align:bottom;
+	padding:5px;
+	}
+
+.skill dd{
+	border-bottom:1px solid #e1e1e1; 
+	margin:0 0 10px 0;
+	padding:0 0 1px 0;
+}
+
+.close{
+	position:absolute;
+	top:-10px;
+	right:-10px;
+}
