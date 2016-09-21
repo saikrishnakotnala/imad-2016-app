@@ -11,9 +11,7 @@ h1{
 	font-weight:normal;
 }
 
-.img-medium {
-    height: 200px;
-}
+
 h2{
 	font-family:'RalewayThin';
 	font-size:48px;
@@ -170,7 +168,7 @@ h6{
 }
 
 
-
+}
 /* RIGHT PANE GENERAL LAYOUT ======================================================================*/
 
 .page{
